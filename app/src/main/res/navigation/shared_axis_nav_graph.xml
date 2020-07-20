@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/start_screen">
+
+    <fragment
+        android:id="@+id/start_screen"
+        android:name="jp.numero.motion_example.sharedaxis.SharedAxisStartFragment"
+        android:label="@string/title_shared_axis"
+        tools:layout="@layout/fragment_shared_axis_start">
+
+        <action
+            android:id="@+id/action_Start_to_End"
+            app:destination="@id/end_screen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/end_screen"
+        android:name="jp.numero.motion_example.sharedaxis.SharedAxisEndFragment"
+        android:label="@string/title_shared_axis"
+        tools:layout="@layout/fragment_shared_axis_end" />
+</navigation>

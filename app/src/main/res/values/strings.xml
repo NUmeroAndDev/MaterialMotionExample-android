@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MotionExample</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_container_transition">Container Transition</string>
+    <string name="title_detail">Detail</string>
+    <string name="title_shared_axis">Shared Axis</string>
+    <string name="title_fade_through">Fade Through</string>
+    <string name="title_fade">Fade</string>
+</resources>
