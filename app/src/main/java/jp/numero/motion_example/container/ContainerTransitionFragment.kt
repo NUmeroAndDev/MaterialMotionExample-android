@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.transition.Hold
 import jp.numero.motion_example.R
 import jp.numero.motion_example.databinding.FragmentContainerTransitionBinding
 
@@ -15,13 +14,6 @@ class ContainerTransitionFragment : Fragment() {
 
     private var _binding: FragmentContainerTransitionBinding? = null
     private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        exitTransition = Hold().apply {
-            addTarget(R.id.container)
-        }
-    }
 
     override fun onCreateView(
             inflater: LayoutInflater,
